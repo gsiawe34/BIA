@@ -1,0 +1,6 @@
+{
+  "name": "Bayelsa International Airport",
+  "description": "Premium aviation portal for Bayelsa International Airport (BIA), featuring real-time flight tracking, VIP lounge bookings, and terminal services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

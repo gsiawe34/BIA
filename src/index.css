@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-navy: #0F172A;
+  --color-brand-gold: #C5A059;
+  --color-brand-blue: #1E40AF;
+  --color-brand-accent: #3B82F6;
+  
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-slate-50 text-slate-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-brand-navy text-white rounded-lg font-medium transition-all hover:bg-slate-800 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-gold {
+    @apply px-6 py-3 bg-brand-gold text-brand-navy rounded-lg font-bold transition-all hover:bg-[#b08d4a] active:scale-[0.98];
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+}
